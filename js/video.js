@@ -24,7 +24,7 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 document.querySelector("#slower").addEventListener("click", function() {
 	console.log("Slow down Video");
-	video.playbackRate*=0.9;
+	video.playbackRate*=.9;
 	console.log("Speed is", video.playbackRate);
 });
 
@@ -70,5 +70,5 @@ document.querySelector("#vintage").addEventListener("click", function() {
 
 document.querySelector("#orig").addEventListener("click", function() {
 	console.log("Current class is original")
-	video.classList.add("original")
+	video.classList.remove("oldSchool")
 });
